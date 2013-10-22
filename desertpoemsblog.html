@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>NoMADiTy</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    body {
+      max-width: 800px;  
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      background: url('http://i.imgur.com/Sa0wY7y.jpg');       
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      color: rgba(150,10,10,0.7);
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 40px 630px 0px 0px;
+      border: 2px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NoMADiTy Blog</h1>
+    <img src="http://i.imgur.com/wO5dsP4.jpg">    
+    <ul>
+      <li><a href="https://dash.generalassemb.ly/gpjalameda/build-your-own-personal-website">About Me</a></li>
+      <li><a href="#">Poems From The Desert</a></li>
+      <li><a href="#">Ruby Red Sands</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Moon eyes</h2>
+    <p>I like your eyes, and I like the moon too, I suffer for love, dreaming with a world, I never belong too.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Hidden waters</h2>
+    <p>Are the veins of the desert.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Burning Sun</h2>
+    <p>Blinded looking at the burning sun, instead of looking at the abyss of your eyes.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
